@@ -1,0 +1,23 @@
+.about__img {
+    display: inline-block;
+    margin-bottom: 23px;
+    width: 283px;
+    height: 283px;
+    background-color: black;
+}
+
+.about__container {
+    text-align: center;
+}
+
+.about__text {
+    margin: 0;
+}
+
+.about__participants {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $grey-color;
+}
