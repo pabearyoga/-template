@@ -4,14 +4,25 @@
     width: 283px;
     height: 283px;
     background-color: black;
+
+    @include mq("mobile-l") {
+        width: 352px;
+        height: 352px;
+        margin-bottom: 25px;
+    }
 }
 
 .about__container {
     text-align: center;
 }
 
-.about__text {
+.text--m {
     margin: 0;
+
+    @include mq("mobile-l") {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 .about__participants {
@@ -20,4 +31,15 @@
     font-size: 15px;
     line-height: 22px;
     color: $grey-color;
+}
+
+.about__list {
+    @include mq("mobile-l") {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.title--margin {
+    margin: 0;
 }

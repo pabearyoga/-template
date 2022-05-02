@@ -1,54 +1,122 @@
 .title {
     margin: 0;
+    margin-bottom: 40px;
     font-weight: 600;
     font-size: 24px;
     line-height: 80px;
     color: $black-color;
+
+    @include mq("mobile-l") {
+        font-size: 30px;
+        line-height: 80px;
+    }
+
+    @include mq("tablet") {
+        font-size: 46px;
+    }
+    @include mq("desktop") {
+        font-size: 48px;
+    }
 }
 
 .skills__list {
     display: flex;
     flex-direction: column;
+
+    @include mq("mobile-l") {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+    }
 }
 
 .skills__item {
+    width: 100%;
     padding: 8px 16px 45px 16px;
     background-color: $bgc-1;
     border-radius: 5px;
     text-align: center;
 
-    &:not(:last-child) {
-        margin-bottom: 21px;
+    @include mq("mobile-l", max) {
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+    }
+
+    @include mq("mobile-l") {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        height: 534px;
+        flex-basis: calc((100% - 30px) / 2);
+        padding: 8px 15px 35px 15px;
+
+        &:nth-child(even) {
+            margin-left: 30px;
+        }
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 21px;
+        }
     }
 }
 
 .div__img {
     display: inline-block;
-    margin-bottom: 10px;
-    width: 213px;
-    height: 213px;
     margin: 0;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
     background-color: black;
+
+    @include mq("mobile-l") {
+        width: 185px;
+        height: 185px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .skills-content {
+    width: 100%;
     text-align: left;
+
+    @include mq("mobile-l") {
+        flex-grow: 1;
+    }
 }
 
 .skills-content__title {
     display: inline-block;
     margin: 0;
+    margin-bottom: 10px;
     font-weight: 600;
     font-size: 18px;
-    line-height: 80px;
+    line-height: 20px;
+
     color: $accent-color;
 }
 
 .text {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     color: $grey-color;
+
+    @include mq("mobile-l") {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.skills__span-1,
+.skills__span-2 {
+    display: inline-block;
+}
+
+.skills__span-1 {
+    margin-bottom: 20px;
 }

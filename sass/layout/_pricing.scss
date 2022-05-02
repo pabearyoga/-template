@@ -5,20 +5,46 @@
     width: 248px;
     height: 248px;
     background-color: black;
+
+    @include mq("mobile-l") {
+        margin-bottom: 20px;
+    }
 }
 
 .price__item {
-    margin-bottom: 63px;
+    &:not(:last-child) {
+        margin-bottom: 70px;
+    }
+
+    @include mq("mobile-l") {
+        padding: 0 60px;
+    }
 }
 
 .price-content__title {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
 
     color: $accent-color;
+
+    @include mq("mobile-l") {
+        font-size: 24px;
+    }
+}
+
+.price__text {
+    margin-bottom: 30px;
+}
+
+.price__span-1,
+.price__span-2 {
+    @include mq("mobile-l") {
+        display: block;
+    }
 }
 
 .price-content__link {
@@ -30,6 +56,11 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba(84, 98, 105, 1);
+
+    @include mq("mobile-l") {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .cost {
@@ -37,4 +68,9 @@
     font-size: 18px;
     line-height: 27px;
     color: $accent-color;
+
+    @include mq("mobile-l") {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }

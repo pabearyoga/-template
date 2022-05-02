@@ -13,11 +13,23 @@
     font-size: 14px;
     line-height: 21px;
     color: $grey-color;
+
+    @include mq("mobile-l") {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .contacts__form {
     display: flex;
-    flex-direction: column;
+
+    @include mq("mobile-l", max) {
+        flex-direction: column;
+    }
+
+    @include mq("mobile-l") {
+        flex-direction: row;
+    }
 }
 
 .contacts__input {
@@ -35,6 +47,9 @@
         line-height: 18px;
         color: $grey-color;
     }
+
+    @include mq("mobile-l") {
+    }
 }
 
 .contacts__btn {
@@ -49,4 +64,8 @@
     background: #263238;
     border: none;
     border-radius: 5px;
+
+    @include mq("mobile-l") {
+        width: 193px;
+    }
 }
