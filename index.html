@@ -1,18 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britlex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="">Brit<span class="logo-span">lex</span></a>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="">Skills</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Contacts</a>
+            </li>
+          </ul>
+          <a class="header__btn" href="#">Let’s Talk</a>
+        </nav>
+      </div>
+    </header>
 
-<body>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <img
+            class="hero__img"
+            src="./images/Learning languages-bro 1@2x.png"
+            alt=""
+          />
+          <h1 class="hero__title">
+            Learn Any <br />
+            Foreign Language
+          </h1>
+          <p class="hero__text">
+            With our teachers who write a program for each student, you will be
+            able to make your first sketch after the first lesson.
+          </p>
+          <a class="btn" href="">Get started</a>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h2 class="title">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <div class="div__img"></div>
+              <div class="skills-content">
+                <h3 class="skills-content__title">Speaking</h3>
+                <p class="text">
+                  Improve your English skills and confidence. Live classes and
+                  interactive lessons online. 20% extra free for a limited time
+                  only <br /><br />
+                  Learn English online and improve your skills through our
+                  high-quality courses and resources – all designed for adult
+                  language learners.
+                </p>
+                <a class="btn btn--s" href="">Learn more</a>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="div__img"></div>
+              <div class="skills-content">
+                <h3 class="skills-content__title">Writing</h3>
+                <p class="text">
+                  One of the most important and extensive areas of natural
+                  science, the science that studies substances, also their
+                  composition
+                </p>
+                <a class="btn btn--s" href="">Learn more</a>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="div__img"></div>
+              <div class="skills-content">
+                <h3 class="skills-content__title">Reading</h3>
+                <p class="text">
+                  perception and response actions of the user resulting from the
+                  use and or up coming use of the product, system or service
+                </p>
+                <a class="btn btn--s" href="">Learn more</a>
+              </div>
+            </li>
+            <li class="skills__item">
+              <div class="div__img"></div>
+              <div class="skills-content">
+                <h3 class="skills-content__title">Listening</h3>
+                <p class="text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                </p>
+                <a class="btn btn--s" href="">Learn more</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <h2 class="title">About Us</h2>
+          <div class="about__img"></div>
+          <p class="text about__text">
+            The model offers a framework for discussing problems related to the
+            user's experience, as well as possible ways and means of solving
+            them. Application development begins at the top level (strategy),
+            where the future software product is described quite abstractly from
+            the point of view of the expectations of both users and the
+            customer.
+          </p>
+          <ul class="about__list">
+            <li class="about__item">
+              <p class="title">800</p>
+              <p class="about__participants">Pupils</p>
+            </li>
+            <li class="about__item">
+              <p class="title">18</p>
+              <p class="about__participants">Teachers</p>
+            </li>
+            <li class="about__item">
+              <p class="title">6</p>
+              <p class="about__participants">Foreign languages</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pricing">
+        <div class="container">
+          <h2 class="title">Pricing</h2>
+          <ul class="price__list">
+            <li class="price__item">
+              <div class="pricing__img"></div>
+              <div class="price-content">
+                <h3 class="price-content__title">Self-study online course</h3>
+                <p class="text">
+                  Start learning English online in live classes with qualified
+                  EC teachers and students from all over the world.
+                </p>
+                <a class="price-content__link" href="">
+                  <span class="cost">£5.99</span> per month</a
+                >
+              </div>
+            </li>
+            <li class="price__item">
+              <div class="pricing__img"></div>
+              <div class="price-content">
+                <h3 class="price-content__title">Live online classes</h3>
+                <p class="text">
+                  Interactive group classes with expert teachers. Free 7-day
+                  trial
+                </p>
+                <a class="price-content__link" href="">
+                  <span class="cost">£12.99</span> per month</a
+                >
+              </div>
+            </li>
+            <li class="price__item">
+              <div class="pricing__img"></div>
+              <div class="price-content">
+                <h3 class="price-content__title">Personal Tuition</h3>
+                <p class="text">
+                  Online one-to-one English tutoring – enjoy our first session
+                  for only $1
+                </p>
+                <a class="price-content__link" href="">
+                  <span class="cost">£20.99</span> per month</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="title">Contact Us</h2>
+          <div class="contacts__img"></div>
+          <p class="contacts__text">
+            Discover your current English level by taking our free online
+            English test.Sign up to our newsletter for learning tips and free
+            resources
+          </p>
+          <div>
+            <form class="contacts__form">
+              <input
+                class="contacts__input"
+                type="email"
+                placeholder="Enter Your E-mail"
+              />
+              <button class="contacts__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo footer__logo" href=""
+          >Brit<span class="logo-span">lex</span></a
+        >
 
+        <ul class="policy">
+          <li class="policy__item">
+            <a class="policy__link" href="#">Terms and Conditions</a>
+          </li>
+          <li class="policy__item">
+            <a class="policy__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="policy__item">
+            <a class="policy__link" href="#">Cookie Policy</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
