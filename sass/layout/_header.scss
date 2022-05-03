@@ -1,17 +1,32 @@
 .header__container {
-    padding: 30px 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
-    @media screen and (max-width: $desktop) {
+    display: flex;
+    align-items: center;
+    @include mq("laptop", max) {
         display: none;
     }
 }
 
 .menu {
+    display: flex;
+    margin-right: 100px;
+
+    @include mq("desktop") {
+        margin-right: 300px;
+    }
 }
 
 .menu__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .menu__link {
@@ -19,6 +34,11 @@
     font-size: 16px;
     line-height: 24px;
     color: $accent-color;
+
+    @include mq("desktop") {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .header__btn {
@@ -32,4 +52,8 @@
 
     border: 2px solid $accent-color;
     border-radius: 5px;
+
+    @include mq("desktop") {
+        padding: 17px 57px;
+    }
 }
