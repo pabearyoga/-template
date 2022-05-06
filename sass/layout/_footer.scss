@@ -38,14 +38,43 @@
     display: inline;
     &:not(:last-child)::after {
         position: absolute;
-        top: -2px;
+        top: 0px;
         right: -6px;
         content: ".";
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+
         color: $grey-color;
+
+        @include mq("mobile-l") {
+            top: -1px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        @include mq("tablet") {
+            top: -3px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        @include mq("laptop") {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @include mq("desktop") {
+            font-size: 24px;
+            line-height: 36px;
+            top: -5px;
+            right: -16px;
+        }
     }
 
     &:not(:last-child) {
         margin-right: 9px;
+
+        @include mq("desktop") {
+            margin-right: 30px;
+        }
     }
 }
 
@@ -54,4 +83,21 @@
     font-size: 11px;
     line-height: 16px;
     color: $grey-color;
+
+    @include mq("mobile-l") {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    @include mq("tablet") {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    @include mq("laptop") {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @include mq("desktop") {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
