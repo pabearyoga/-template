@@ -1,3 +1,14 @@
+.about__title {
+    @include mq("tablet") {
+        text-align: left;
+        margin: 0;
+    }
+
+    @include mq("desktop") {
+        margin-bottom: 10px;
+    }
+}
+
 .about__img {
     display: inline-block;
     margin-bottom: 23px;
@@ -10,10 +21,44 @@
         height: 352px;
         margin-bottom: 25px;
     }
+
+    @include mq("tablet") {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        margin: 0;
+        width: 295px;
+        height: 295px;
+    }
+
+    @include mq("laptop") {
+        top: 0;
+        width: 336px;
+        height: 336px;
+    }
+
+    @include mq("desktop") {
+        top: -65px;
+        width: 500px;
+        height: 500px;
+    }
 }
 
 .about__container {
+    position: relative;
     text-align: center;
+
+    @include mq("tablet") {
+        padding-right: 341px;
+    }
+
+    @include mq("laptop") {
+        padding-right: 395px;
+    }
+
+    @include mq("desktop") {
+        padding-right: 655px;
+    }
 }
 
 .text--m {
@@ -23,14 +68,46 @@
         font-size: 14px;
         line-height: 21px;
     }
+
+    @include mq("tablet") {
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include mq("desktop") {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .about__participants {
     margin: 0;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 20px;
     color: $grey-color;
+
+    @include mq("mobile-l") {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    @include mq("tablet") {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    @include mq("laptop") {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include mq("desktop") {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .about__list {
@@ -38,8 +115,42 @@
         display: flex;
         justify-content: space-around;
     }
+
+    @include mq("tablet") {
+        justify-content: space-between;
+    }
+
+    @include mq("laptop") {
+        padding-right: 120px;
+    }
+
+    @include mq("desktop") {
+        padding-right: 0;
+    }
 }
 
-.title--margin {
+.about__number {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80px;
+    color: #2a3246;
+
+    @include mq("mobile-l") {
+    }
+
+    @include mq("tablet") {
+        font-size: 22px;
+    }
+
+    @include mq("laptop") {
+        font-size: 30px;
+    }
+
+    @include mq("desktop") {
+        font-size: 48px;
+    }
+}
+
+.about__number--margin {
     margin: 0;
 }

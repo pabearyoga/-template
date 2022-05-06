@@ -8,11 +8,10 @@
 
     @include mq("mobile-l") {
         font-size: 30px;
-        line-height: 80px;
     }
 
-    @include mq("tablet") {
-        font-size: 46px;
+    @include mq("laptop") {
+        font-size: 36px;
     }
     @include mq("desktop") {
         font-size: 48px;
@@ -28,11 +27,14 @@
         flex-wrap: wrap;
         margin: 0 -30px;
     }
-}
 
+    @include mq("tablet") {
+    }
+}
 .skills__item {
     width: 100%;
-    padding: 8px 16px 45px 16px;
+    height: 100%;
+    padding: 8px 16px 35px 16px;
     background-color: $bgc-1;
     border-radius: 5px;
     text-align: center;
@@ -49,7 +51,6 @@
         width: 240px;
         height: 534px;
         flex-basis: calc((100% - 30px) / 2);
-        padding: 8px 15px 35px 15px;
 
         &:nth-child(even) {
             margin-left: 30px;
@@ -58,6 +59,41 @@
         &:not(:nth-last-child(-n + 2)) {
             margin-bottom: 21px;
         }
+    }
+
+    @include mq("tablet") {
+        margin: 0;
+
+        &:not(:first-child),
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            align-self: start;
+        }
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        // &:last-child {
+        //     display: flex;
+        //     flex-direction: row-reverse;
+        // }
+
+        &:nth-child(1) {
+            grid-area: row-1;
+        }
+        &:nth-child(2) {
+            grid-area: row-2;
+        }
+        &:nth-child(3) {
+            grid-area: row-3;
+        }
+        &:nth-child(4) {
+            grid-area: row-4;
+        }
+    }
+
+    @include mq("desktop") {
     }
 }
 
@@ -73,8 +109,11 @@
         width: 185px;
         height: 185px;
         display: block;
+        margin: 0;
+        margin-bottom: 10px;
         margin-right: auto;
         margin-left: auto;
+        flex-shrink: 0;
     }
 }
 
@@ -84,7 +123,10 @@
 
     @include mq("mobile-l") {
         flex-grow: 1;
+        padding-right: 74px;
     }
+
+    @include mq("");
 }
 
 .skills-content__title {
@@ -100,7 +142,7 @@
 
 .text {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -118,5 +160,5 @@
 }
 
 .skills__span-1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }

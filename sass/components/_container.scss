@@ -4,28 +4,31 @@
     margin: 0 auto;
     text-align: center;
 
-    @include mq("mobile-l", max) {
+    @include mq("mobile-s") {
         width: 320px;
         padding: 0 15px;
         padding-bottom: 50px;
     }
-    @media screen and (min-width: $mobile-l) {
+
+    @include mq("mobile-l") {
         width: 575px;
         padding-bottom: 100px;
     }
-
-    @media screen and (min-width: $tablet) {
+    @include mq("tablet") {
         width: 728px;
         padding: 0 20px;
+        padding-bottom: 50px;
     }
 
-    @media screen and (min-width: $laptop) {
+    @include mq("laptop") {
         width: 962px;
         padding: 0 40px;
+        padding-bottom: 100px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include mq("desktop") {
         width: 1368px;
         padding: 0 70px;
+        padding-bottom: 200px;
     }
 }

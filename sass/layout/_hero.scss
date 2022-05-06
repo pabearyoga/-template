@@ -103,8 +103,11 @@
 }
 
 .btn {
+    width: 100%;
     display: inline-block;
-    padding: 18px 99px;
+    // padding: 18px 99px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
     font-weight: 500;
     font-size: 16px;
@@ -116,8 +119,8 @@
     text-align: center;
 
     &--s {
-        width: 100%;
-        padding: 14px 43px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
     @include mq("mobile-l") {
@@ -127,7 +130,8 @@
 
     @include mq("tablet") {
         width: 236px;
-        padding: 19px 67px;
+        padding-top: 19px;
+        padding-bottom: 19px;
     }
 
     @include mq("laptop") {
