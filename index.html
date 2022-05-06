@@ -22,8 +22,47 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="">Brit<span class="logo-span">lex</span></a>
+        <div class="menu">
+          <button
+            class="menu__btn is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu__list-1"
+            data-menu-button
+          >
+            <svg class="menu__incon" width="40px" height="40px">
+              <use
+                class="menu__icon-open"
+                href="./images/sprite.svg#icon-open"
+              ></use>
+              <use
+                class="menu__icon-close"
+                href="./images/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu__wrapper" id="menu__wrapper" data-menu>
+            <ul class="menu__list" id="menu__list" data-menu>
+              <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Pricing</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Contacts</a>
+              </li>
+            </ul>
+            <a class="header__btn" href="#">Let’s Talk</a>
+          </div>
+        </div>
         <nav class="navigation">
-          <ul class="menu">
+          <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="">Home</a></li>
             <li class="menu__item"><a class="menu__link" href="">Skills</a></li>
             <li class="menu__item">
@@ -243,5 +282,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
