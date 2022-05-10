@@ -133,38 +133,33 @@ a {
   display: none;
 }
 
+.backdrop {
+  display: none;
+}
+
+.backdrop.is-open {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
 .menu__wrapper {
   display: none;
 }
 
-.menu__wrapper.is-open {
-  width: 250px;
+.backdrop.is-open .menu__wrapper {
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 20;
   padding: 20px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: red;
-}
-
-.menu__wrapper .menu__list {
-  margin: 0;
-  margin-top: 30px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,20 +170,55 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 30px;
+  background-color: white;
+}
+
+@media only screen and (min-width: 767px) {
+  .backdrop.is-open .menu__wrapper {
+    width: 70vh;
+  }
+}
+
+.menu__wrapper .menu__list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 24px;
+  line-height: 65px;
+  border-top: 1px solid #8f95a5;
 }
 
 .menu__wrapper .menu__item {
   display: block;
   width: 100%;
   margin: 0;
-  border-bottom: 1px solid #000;
   text-align: left;
 }
 
 .menu__wrapper .header__btn {
   width: 100%;
-  margin-top: 70px;
+}
+
+@media only screen and (max-width: 766px) {
+  .menu__wrapper .header__btn {
+    max-width: 330px;
+  }
+}
+
+.menu__wrapper .logo {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .menu {
