@@ -118,11 +118,6 @@
     border-radius: 5px;
     text-align: center;
 
-    &--s {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-
     @include mq("mobile-l") {
         font-size: 18px;
         line-height: 27px;
@@ -150,5 +145,14 @@
         padding-bottom: 32px;
         font-size: 36px;
         line-height: 54px;
+    }
+
+    &--s {
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        @include mq("tablet") {
+            width: 178px;
+        }
     }
 }
