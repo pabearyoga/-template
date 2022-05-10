@@ -152,7 +152,15 @@
         padding-bottom: 14px;
 
         @include mq("tablet") {
-            width: 178px;
+            width: 100%;
+        }
+
+        @include mq("laptop") {
+            width: 196px;
+            height: 57px;
+            padding: 16px 0;
+            font-size: 18px;
+            line-height: 27px;
         }
     }
 }

@@ -37,20 +37,20 @@
     @include mq("tablet") {
         position: absolute;
         top: 14px;
-        left: 0;
+        left: 20px;
         margin: 0;
         width: 233px;
         height: 210px;
     }
     @include mq("laptop") {
         top: -7px;
-        left: 56px;
+        left: 40px;
         width: 312px;
         height: 281px;
     }
     @include mq("desktop") {
         top: 0;
-        left: 77px;
+        left: 70px;
         width: 477px;
         height: 429px;
     }

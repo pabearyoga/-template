@@ -564,7 +564,17 @@ a {
 
 @media only screen and (min-width: 767px) {
   .btn--s {
-    width: 178px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .btn--s {
+    width: 196px;
+    height: 57px;
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
@@ -633,6 +643,26 @@ a {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .skills__list {
+    grid-gap: 15px;
+    -ms-grid-columns: (303px)[3];
+        grid-template-columns: repeat(3, 303px);
+    -ms-grid-rows: (241px)[3];
+        grid-template-rows: repeat(3, 241px);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .skills__list {
+    grid-gap: 20px;
+    -ms-grid-columns: (435px)[3];
+        grid-template-columns: repeat(3, 435px);
+    -ms-grid-rows: (343px)[3];
+        grid-template-rows: repeat(3, 343px);
+  }
+}
+
 .skills__item {
   width: 100%;
   height: 100%;
@@ -679,6 +709,7 @@ a {
     height: 100%;
   }
   .skills__item:last-child {
+    padding: 10px 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -686,6 +717,7 @@ a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    position: relative;
   }
   .skills__item:last-child .skills-content {
     display: -webkit-box;
@@ -695,12 +727,21 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding-right: 175px;
   }
   .skills__item:last-child .btn.hide {
     display: block;
+    width: 192px;
   }
   .skills__item:last-child .btn {
     display: none;
+  }
+  .skills__item:last-child .div__img {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -783,7 +824,7 @@ a {
 
 @media only screen and (min-width: 767px) {
   .skills-content {
-    padding-right: 34px;
+    padding: 0;
   }
 }
 
@@ -795,6 +836,27 @@ a {
   font-size: 18px;
   line-height: 20px;
   color: #263238;
+}
+
+@media only screen and (min-width: 767px) {
+  .skills-content__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .skills-content__title {
+    font-size: 22px;
+    line-height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .skills-content__title {
+    font-size: 30px;
+  }
 }
 
 .text {
@@ -810,6 +872,27 @@ a {
   .text {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -1287,7 +1370,7 @@ a {
   .contacts__img {
     position: absolute;
     top: 14px;
-    left: 0;
+    left: 20px;
     margin: 0;
     width: 233px;
     height: 210px;
@@ -1297,7 +1380,7 @@ a {
 @media only screen and (min-width: 992px) {
   .contacts__img {
     top: -7px;
-    left: 56px;
+    left: 40px;
     width: 312px;
     height: 281px;
   }
@@ -1306,7 +1389,7 @@ a {
 @media only screen and (min-width: 1600px) {
   .contacts__img {
     top: 0;
-    left: 77px;
+    left: 70px;
     width: 477px;
     height: 429px;
   }
