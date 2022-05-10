@@ -92,11 +92,28 @@
             flex-direction: row-reverse;
             position: relative;
 
+            @include mq("laptop") {
+                padding: 0 16px;
+            }
+
+            @include mq("desktop") {
+                padding-left: 45px;
+            }
+
             & .skills-content {
                 display: flex;
                 flex-direction: column;
                 flex-shrink: 0;
                 padding-right: 175px;
+
+                @include mq("laptop") {
+                    padding-right: 300px;
+                }
+
+                @include mq("desktop") {
+                    padding-top: 54px;
+                    padding-right: 490px;
+                }
             }
 
             & .btn.hide {
@@ -114,6 +131,13 @@
                 right: 0;
             }
         }
+    }
+
+    @include mq("desktop") {
+        padding-top: 10px;
+        padding-bottom: 90px;
+        padding-left: 45px;
+        padding-right: 36px;
     }
 }
 
@@ -178,6 +202,14 @@
     @include mq("tablet") {
         padding: 0;
     }
+
+    @include mq("laptop") {
+        padding-right: 25px;
+    }
+
+    @include mq("desktop") {
+        padding-right: 0;
+    }
 }
 
 .skills-content__title {
@@ -203,6 +235,7 @@
 
     @include mq("desktop") {
         font-size: 30px;
+        line-height: 60px;
     }
 }
 

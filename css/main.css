@@ -719,6 +719,21 @@ a {
             flex-direction: row-reverse;
     position: relative;
   }
+}
+
+@media only screen and (min-width: 767px) and (min-width: 992px) {
+  .skills__item:last-child {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (min-width: 1600px) {
+  .skills__item:last-child {
+    padding-left: 45px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
   .skills__item:last-child .skills-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -731,6 +746,22 @@ a {
         flex-shrink: 0;
     padding-right: 175px;
   }
+}
+
+@media only screen and (min-width: 767px) and (min-width: 992px) {
+  .skills__item:last-child .skills-content {
+    padding-right: 300px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (min-width: 1600px) {
+  .skills__item:last-child .skills-content {
+    padding-top: 54px;
+    padding-right: 490px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
   .skills__item:last-child .btn.hide {
     display: block;
     width: 192px;
@@ -742,6 +773,15 @@ a {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .skills__item {
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 45px;
+    padding-right: 36px;
   }
 }
 
@@ -828,6 +868,18 @@ a {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .skills-content {
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .skills-content {
+    padding-right: 0;
+  }
+}
+
 .skills-content__title {
   display: inline-block;
   margin: 0;
@@ -856,6 +908,7 @@ a {
 @media only screen and (min-width: 1600px) {
   .skills-content__title {
     font-size: 30px;
+    line-height: 60px;
   }
 }
 
