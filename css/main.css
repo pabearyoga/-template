@@ -145,7 +145,7 @@ a {
   z-index: 5;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background: rgba(7, 34, 47, 0.7);
 }
 
 .menu__wrapper {
