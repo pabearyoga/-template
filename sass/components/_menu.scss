@@ -1,0 +1,114 @@
+.menu__btn {
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    z-index: 30;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: transparent;
+    background: transparent;
+
+    @include mq("laptop") {
+        display: none;
+    }
+}
+
+.menu__btn {
+    @include mq("tablet") {
+        position: fixed;
+
+        &.is-open {
+            position: absolute;
+        }
+    }
+}
+
+.menu__icon-open {
+    display: none;
+}
+
+.menu__btn.is-open .menu__icon-open {
+    display: block;
+}
+
+.menu__btn.is-open .menu__icon-close {
+    display: none;
+}
+
+.backdrop {
+    display: none;
+}
+
+.backdrop.is-open {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(7, 34, 47, 0.7);
+}
+
+.menu__wrapper {
+    display: none;
+}
+
+.backdrop.is-open .menu__wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $white-color;
+
+    @include mq("tablet") {
+        width: 70vh;
+    }
+}
+
+.menu__wrapper .menu__list {
+    margin: 0;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 65px;
+    border-top: 1px solid $grey-color;
+}
+
+.menu__wrapper .menu__item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.menu__wrapper .header__btn {
+    width: 100%;
+
+    @include mq("tablet", max) {
+        max-width: 330px;
+    }
+}
+
+.menu__wrapper .logo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
