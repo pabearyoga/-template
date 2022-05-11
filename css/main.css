@@ -328,6 +328,7 @@ a {
 .footer__container {
   position: relative;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .footer__container::before {
@@ -354,6 +355,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.footer__logo {
+  position: static;
 }
 
 @media only screen and (max-width: 574px) {
