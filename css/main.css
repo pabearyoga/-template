@@ -121,13 +121,12 @@ a {
   }
 }
 
-@media only screen and (min-width: 767px) {
-  .menu__btn {
-    position: fixed;
-  }
-  .menu__btn.is-open {
-    position: absolute;
-  }
+.menu__btn {
+  position: fixed;
+}
+
+.menu__btn.is-open {
+  position: absolute;
 }
 
 .menu__icon-open {
@@ -167,6 +166,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: auto;
   z-index: 20;
   padding: 20px 20px;
   display: -webkit-box;

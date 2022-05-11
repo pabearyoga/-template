@@ -15,12 +15,10 @@
 }
 
 .menu__btn {
-    @include mq("tablet") {
-        position: fixed;
+    position: fixed;
 
-        &.is-open {
-            position: absolute;
-        }
+    &.is-open {
+        position: absolute;
     }
 }
 
@@ -61,6 +59,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    overflow-y: auto;
     z-index: 20;
     padding: 20px 20px;
     display: flex;
