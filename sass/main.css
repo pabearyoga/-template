@@ -16,6 +16,10 @@
   }
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -156,12 +160,13 @@ a {
 .backdrop.is-open {
   display: inline-block;
   position: fixed;
-  top: 0;
+  top: 1000px;
   right: 0;
   z-index: 5;
   width: 100vw;
   height: 100vh;
   background: rgba(7, 34, 47, 0.7);
+  overflow: hidden;
 }
 
 .menu__wrapper {
