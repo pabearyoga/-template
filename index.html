@@ -21,7 +21,9 @@
   <body class="body">
     <header class="header">
       <div class="container header__container">
-        <a class="logo" href="">Brit<span class="logo-span">lex</span></a>
+        <a class="logo" href="./index.html"
+          >Brit<span class="logo-span">lex</span></a
+        >
         <div class="menu">
           <button
             class="menu__btn is-open"
@@ -47,7 +49,7 @@
               <a class="logo" href="">Brit<span class="logo-span">lex</span></a>
               <ul class="menu__list" id="menu__list" data-menu>
                 <li class="menu__item">
-                  <a class="menu__link" href="">Home</a>
+                  <a class="menu__link" href="#hero">Home</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="#skills">Skills</a>
@@ -62,31 +64,35 @@
                   <a class="menu__link" href="#contacts">Contacts</a>
                 </li>
               </ul>
-              <a class="header__btn" href="#">Let’s Talk</a>
+              <a class="header__btn" href="#contacts">Let’s Talk</a>
             </div>
           </div>
         </div>
         <nav class="navigation">
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Skills</a></li>
             <li class="menu__item">
-              <a class="menu__link" href="">About Us</a>
+              <a class="menu__link" href="#hero">Home</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">Pricing</a>
+              <a class="menu__link" href="#skills">Skills</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">Contacts</a>
+              <a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#pricing">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Contacts</a>
             </li>
           </ul>
-          <a class="header__btn" href="#">Let’s Talk</a>
+          <a class="header__btn" href="#contacts">Let’s Talk</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container hero__container">
           <img
             class="hero__img"
@@ -102,7 +108,7 @@
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <a class="btn" href="">Get started</a>
+            <a class="btn" href="#contacts">Get started</a>
           </div>
         </div>
       </section>
