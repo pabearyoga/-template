@@ -11,20 +11,10 @@
 .hero__img {
     margin-bottom: 16px;
 
-    @include mq("tablet") {
-        width: 352px;
-        height: 352px;
+    @include mq("mobile-l") {
         margin: 0;
-    }
-
-    @include mq("laptop") {
-        width: 460px;
-        height: 460px;
-    }
-
-    @include mq("desktop") {
-        width: 661px;
-        height: 661px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
