@@ -1255,9 +1255,6 @@ a {
   display: inline-block;
   margin: 0;
   margin-bottom: 10px;
-  width: 248px;
-  height: 248px;
-  background-color: black;
 }
 
 @media only screen and (min-width: 575px) {
@@ -1268,24 +1265,28 @@ a {
 
 @media only screen and (min-width: 767px) {
   .pricing__img {
-    width: 197px;
-    height: 197px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .pricing__img {
-    width: 222px;
-    height: 222px;
+.pricing__img--margin-top {
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 767px) {
+  .pricing__img--margin-top {
+    margin-top: 46px;
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .pricing__img {
-    width: 311px;
-    height: 311px;
+.pricing__img--first {
+  margin-top: 13px;
+}
+
+@media only screen and (min-width: 767px) {
+  .pricing__img--first {
+    margin-top: 18px;
   }
 }
 
