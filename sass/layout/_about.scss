@@ -12,13 +12,9 @@
 .about__img {
     display: inline-block;
     margin-bottom: 23px;
-    width: 283px;
-    height: 283px;
-    background-color: black;
 
     @include mq("mobile-l") {
-        width: 352px;
-        height: 352px;
+        margin: 0;
         margin-bottom: 25px;
     }
 
@@ -27,20 +23,14 @@
         top: 72px;
         right: 0;
         margin: 0;
-        width: 295px;
-        height: 295px;
     }
 
     @include mq("laptop") {
         top: 0;
-        width: 336px;
-        height: 336px;
     }
 
     @include mq("desktop") {
         top: -65px;
-        width: 500px;
-        height: 500px;
     }
 }
 

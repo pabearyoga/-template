@@ -1075,15 +1075,11 @@ a {
 .about__img {
   display: inline-block;
   margin-bottom: 23px;
-  width: 283px;
-  height: 283px;
-  background-color: black;
 }
 
 @media only screen and (min-width: 575px) {
   .about__img {
-    width: 352px;
-    height: 352px;
+    margin: 0;
     margin-bottom: 25px;
   }
 }
@@ -1094,24 +1090,18 @@ a {
     top: 72px;
     right: 0;
     margin: 0;
-    width: 295px;
-    height: 295px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .about__img {
     top: 0;
-    width: 336px;
-    height: 336px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .about__img {
     top: -65px;
-    width: 500px;
-    height: 500px;
   }
 }
 
