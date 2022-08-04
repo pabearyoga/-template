@@ -14,16 +14,22 @@
 }
 
 .pricing__img--margin-top {
-    margin-top: 50px;
-    @include mq("tablet") {
-        margin-top: 46px;
+    margin-top: 49px;
+    @include mq("laptop") {
+        margin-top: 47px;
+    }
+    @include mq("desktop") {
+        margin-top: 57px;
     }
 }
 
 .pricing__img--first {
     margin-top: 13px;
-    @include mq("tablet") {
-        margin-top: 18px;
+    @include mq("laptop") {
+        margin-top: 20px;
+    }
+    @include mq("desktop") {
+        margin-top: 28px;
     }
 }
 

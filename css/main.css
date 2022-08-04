@@ -1271,12 +1271,18 @@ a {
 }
 
 .pricing__img--margin-top {
-  margin-top: 50px;
+  margin-top: 49px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 992px) {
   .pricing__img--margin-top {
-    margin-top: 46px;
+    margin-top: 47px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .pricing__img--margin-top {
+    margin-top: 57px;
   }
 }
 
@@ -1284,9 +1290,15 @@ a {
   margin-top: 13px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 992px) {
   .pricing__img--first {
-    margin-top: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .pricing__img--first {
+    margin-top: 28px;
   }
 }
 
