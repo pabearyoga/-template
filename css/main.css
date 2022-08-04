@@ -1512,16 +1512,6 @@ a {
   display: inline-block;
   margin: 0;
   margin-bottom: 30px;
-  width: 253px;
-  height: 228px;
-  background-color: black;
-}
-
-@media only screen and (min-width: 575px) {
-  .contacts__img {
-    width: 358px;
-    height: 322px;
-  }
 }
 
 @media only screen and (min-width: 767px) {
@@ -1530,8 +1520,6 @@ a {
     top: 14px;
     left: 20px;
     margin: 0;
-    width: 233px;
-    height: 210px;
   }
 }
 
@@ -1539,8 +1527,6 @@ a {
   .contacts__img {
     top: -7px;
     left: 40px;
-    width: 312px;
-    height: 281px;
   }
 }
 
@@ -1548,8 +1534,6 @@ a {
   .contacts__img {
     top: 0;
     left: 70px;
-    width: 477px;
-    height: 429px;
   }
 }
 

@@ -404,7 +404,24 @@
       <section id="contacts" class="contacts">
         <div class="container contacts__container">
           <h2 class="title contacts__title">Contact Us</h2>
-          <div class="contacts__img"></div>
+          <img
+            class="contacts__img"
+            srcset="
+              ./images/mobile-s/contacts.png    253w,
+              ./images/mobile-s/contacts@2x.png 506w,
+              ./images/mobile-l/contacts.png    358w,
+              ./images/mobile-l/contacts@2x.png 716w,
+              ./images/tablet/contacts.png      233w,
+              ./images/tablet/contacts@2x.png   466w,
+              ./images/laptop/contacts.png      312w,
+              ./images/laptop/contacts@2x.png   624w,
+              ./images/desktop/contacts.png     477w,
+              ./images/desktop/contacts@2x.png  954w
+            "
+            sizes="(min-width: 1600px) 477px, (min-width: 992px) 312px, (min-width: 767px) 233px, (min-width: 575px) 358px, (min-width: 320px) 253px, 100vw"
+            src="./images/mobile-s/contacts.png"
+            alt=""
+          />
           <p class="contacts__text">
             Discover your current English level by taking our free online
             English test.Sign up to our newsletter for learning tips and free

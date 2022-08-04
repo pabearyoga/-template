@@ -26,33 +26,20 @@
     display: inline-block;
     margin: 0;
     margin-bottom: 30px;
-    width: 253px;
-    height: 228px;
-    background-color: black;
 
-    @include mq("mobile-l") {
-        width: 358px;
-        height: 322px;
-    }
     @include mq("tablet") {
         position: absolute;
         top: 14px;
         left: 20px;
         margin: 0;
-        width: 233px;
-        height: 210px;
     }
     @include mq("laptop") {
         top: -7px;
         left: 40px;
-        width: 312px;
-        height: 281px;
     }
     @include mq("desktop") {
         top: 0;
         left: 70px;
-        width: 477px;
-        height: 429px;
     }
 }
 
