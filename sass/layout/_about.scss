@@ -11,6 +11,7 @@
 
 .about__img {
     display: inline-block;
+    margin: 0;
     margin-bottom: 23px;
 
     @include mq("mobile-l") {
