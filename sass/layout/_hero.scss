@@ -19,6 +19,8 @@
 }
 
 .hero__content {
+    position: relative;
+
     @include mq("tablet") {
         display: flex;
         flex-direction: column;
@@ -152,5 +154,34 @@
             font-size: 18px;
             line-height: 27px;
         }
+    }
+}
+
+.hero__icon {
+    display: none;
+    width: 51px;
+    height: 51px;
+
+    @include mq("tablet") {
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 75px;
+    }
+    @include mq("laptop") {
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 70px;
+        width: 59px;
+        height: 59px;
+    }
+    @include mq("desktop") {
+        display: block;
+        position: absolute;
+        top: 225px;
+        right: 80px;
+        width: 85px;
+        height: 85px;
     }
 }
